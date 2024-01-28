@@ -1,0 +1,53 @@
+{
+  "name": "create-wowgo",
+  "version": "0.0.1",
+  "description": "Quick and easy fullstack Node monoRepo project starter",
+  "author": "taiwanhua <a0987837233@gmail.com>",
+  "license": "MIT",
+  "type": "module",
+  "keywords": [
+    "typescript",
+    "express",
+    "prisma",
+    "graphql",
+    "swagger",
+    "jest",
+    "nodemon",
+    "pm2",
+    "eslint",
+    "prettier",
+    "docker",
+    "docker-compose",
+    "nginx",
+    "swc"
+  ],
+  "main": "bin/codegen.js",
+  "bin": {
+    "create-wowgo": "bin/codegen.js"
+  },
+  "scripts": {
+    "start": "node bin/codegen.js"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "copy-template-dir": "^1.4.0",
+    "inquirer": "^9.2.13",
+    "ncp": "^2.0.0",
+    "ora": "^8.0.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">= 18.19.0",
+    "npm": ">= 9.3.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/taiwanhua/create-wowgo"
+  },
+  "bugs": {
+    "url": "https://github.com/taiwanhua/create-wowgo/issues"
+  },
+  "homepage": "https://github.com/taiwanhua/create-wowgo#readme"
+}
