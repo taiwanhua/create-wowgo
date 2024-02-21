@@ -1,12 +1,23 @@
 #!/usr/bin/env node
 
-import { join } from "node:path";
+import { dirname, join } from "node:path";
 import { createProject } from "../lib/starter.js";
 
-const projectName = getDestination(process.argv[2]);
+const latestTurbo = "1.11.3";
+const defaultDestFolder = "my-wowgo-project";
 
-function getDestination(destFolder = "my-wowgo-project") {
+const destFolder = process.argv[2] ?? defaultDestFolder;
+const projectPath = getDestination(destFolder);
+const projectParentPath = dirname(projectPath);
+const turboVersion = process.argv[3] ?? latestTurbo;
+
+function getDestination(destFolder) {
   return join(process.cwd(), destFolder);
 }
 
-createProject(projectName);
+createProject({
+  projectName: destFolder,
+  projectPath,
+  projectParentPath,
+  turboVersion,
+});

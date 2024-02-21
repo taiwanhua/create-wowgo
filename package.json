@@ -1,6 +1,6 @@
 {
   "name": "create-wowgo",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Quick and easy fullstack Node monoRepo project starter",
   "author": "taiwanhua <a0987837233@gmail.com>",
   "license": "MIT",
@@ -29,6 +29,7 @@
     "start": "node bin/codegen.js"
   },
   "dependencies": {
+    "@changesets/cli": "^2.27.1",
     "chalk": "^5.3.0",
     "copy-template-dir": "^1.4.0",
     "inquirer": "^9.2.13",
