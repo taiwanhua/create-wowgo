@@ -3,8 +3,8 @@
 import { dirname, join } from "node:path";
 import { createProject } from "../lib/starter.js";
 
-const latestTurbo = "1.11.3";
-const defaultDestFolder = "my-wowgo-project";
+export const latestTurbo = "1.12.4";
+export const defaultDestFolder = "my-wowgo-project";
 
 const destFolder = process.argv[2] ?? defaultDestFolder;
 const projectPath = getDestination(destFolder);

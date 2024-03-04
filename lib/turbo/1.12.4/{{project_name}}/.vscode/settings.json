@@ -1,0 +1,13 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "prettier.trailingComma": "all",
+  "cSpell.userWords": ["codegen", "wowgo"],
+  // https://github.com/microsoft/vscode-eslint/issues/1620
+  // "eslint.experimental.useFlatConfig": false,
+  // https://github.com/microsoft/vscode-eslint/issues/1377
+  "eslint.workingDirectories": [
+    { "pattern": "./apps/*" },
+    { "pattern": "./packages/*" }
+  ]
+}
